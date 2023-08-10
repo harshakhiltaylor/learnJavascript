@@ -40,3 +40,12 @@ function loggedInMessage(username)
 console.log(loggedInMessage("harsh"));
 console.log(loggedInMessage());
 
+
+function calculateCartPrice(...num1)  // spread operator
+
+{
+    return num1;
+}
+
+console.log(calculateCartPrice(200,400,500));
+// Spread Operator so that all the values can be displayed 
