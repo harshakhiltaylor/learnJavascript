@@ -57,3 +57,37 @@ const books = [
 
 
   console.log(nums);
+
+  const numbers = [1,2,3];
+
+  // const myTotal = numbers.reduce(function (acc,curvalue){
+  //   console.log(`accmulator:${acc} and current value ${curvalue}`);
+  //   return acc + curvalue;
+  // },0)
+
+  const myTotal = numbers.reduce( (acc,curvalue) => acc + curvalue,0);
+
+  console.log(myTotal);
+
+
+  const shoppingCart = [
+
+    {
+      itemName : "js Course",
+      price  : 999,
+    },
+    {
+      itemName : "mobile development",
+      price : 1001,
+    },
+    {
+      itemName: "Development by swift",
+      price :5999,
+    }
+
+  ]
+  
+ // Important price 
+
+  const priceToPay = shoppingCart.reduce( (acc , ran) => acc + ran.price , 0);
+  console.log(priceToPay);
